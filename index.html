@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Interactive Web</h1>
+            <p>Explore our features and services</p>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">Services</a></li>
+                <li><a href="#" class="nav-link">About</a></li>
+                <li><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="content-section">
+            <main class="main-content">
+                <h2>Registration Form</h2>
+                <form id="registration-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" placeholder="Enter your full name">
+                        <div class="error" id="name-error">Please enter your full name</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Enter your email">
+                        <div class="error" id="email-error">Please enter a valid email address</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Create a password">
+                        <div class="error" id="password-error">Password must be at least 8 characters</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" placeholder="Confirm your password">
+                        <div class="error" id="confirm-password-error">Passwords do not match</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" placeholder="Enter your age" min="13">
+                        <div class="error" id="age-error">You must be at least 13 years old</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="country">Country</label>
+                        <select id="country">
+                            <option value="">Select your country</option>
+                            <option value="usa">United States</option>
+                            <option value="canada">Canada</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="australia">Australia</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <div class="error" id="country-error">Please select your country</div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="terms">
+                            I agree to the Terms and Conditions
+                        </label>
+                        <div class="error" id="terms-error">You must agree to the terms</div>
+                    </div>
+                    
+                    <button type="submit">Register</button>
+                </form>
+            </main>
+            
+            <aside class="sidebar">
+                <h2>Interactive Features</h2>
+                
+                <div class="interactive-section">
+                    <h3>Counter</h3>
+                    <p>Click the buttons to change the value:</p>
+                    <div class="counter">
+                        <button id="decrement-btn">-</button>
+                        <div class="counter-value" id="counter-value">0</div>
+                        <button id="increment-btn">+</button>
+                    </div>
+                </div>
+                
+                <div class="interactive-section">
+                    <h3>Text Manipulator</h3>
+                    <p>Enter text and manipulate it:</p>
+                    <div class="form-group">
+                        <input type="text" id="text-input" placeholder="Enter some text">
+                    </div>
+                    <div class="form-group">
+                        <button id="uppercase-btn">UPPERCASE</button>
+                        <button id="lowercase-btn">lowercase</button>
+                        <button id="reset-text-btn">Reset</button>
+                    </div>
+                    <div class="form-group">
+                        <p>Result: <span id="text-output"></span></p>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 Interactive Web Page. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
